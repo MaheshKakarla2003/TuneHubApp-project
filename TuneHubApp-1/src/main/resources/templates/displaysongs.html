@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Songs List Page</title>
+<style>
+body
+{
+background-color: yellow;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>displayig all the songs</h1>
+
+<table border>
+<thead>
+<tr>
+   <th>Id
+   <th>Song Name
+   <th>Artist Name
+   <th>Song Genre
+   <th>Song Link
+</tr>
+</thead>
+<tbody>
+
+<tr th:each="sl:${songList}">
+<td th:text="${sl.id}"></td>
+<td th:text="${sl.songName}"></td>
+<td th:text="${sl.songArtist}"></td>
+<td th:text="${sl.songGenre}"></td>
+
+<td>
+<audio controls>
+<source th:src=${sl.songLink} type="audio/mpeg">
+</audio>
+</tr>
+</tbody>
+</center>
+</table>
+</body>
+</html>

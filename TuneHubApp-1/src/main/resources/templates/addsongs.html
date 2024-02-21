@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Songs Home</title>
+<style >
+body{
+background-color:pink;
+}
+table{
+background-color:yellow;
+border: 2px solid black;
+border-radius:20px;
+
+padding:30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<center>
+<h1>Add Songs Here</h1>
+<table>
+
+<form action="/addsongs" method="post" >
+<tr>
+<td >Song Name :
+<td><input type="text" name="songName" />
+</tr>
+<tr>
+<td >
+Song Artist :
+<td>
+<input type="text" name="songArtist" />
+</tr>
+<tr>
+<td >
+Song Genre :
+<td>
+<input type="text" name="songGenre" />
+</tr>
+<tr>
+<td >
+Song Link :
+<td>
+<input type="text" name="songLink" />
+</tr>
+
+
+<tr>
+<td>
+<td>
+<input type="submit" value="ADD SONG"/>
+</tr>
+</form>
+</table>
+</center>
+</body>
+</html>
